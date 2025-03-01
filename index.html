@@ -34,8 +34,8 @@
             <div>
                 <div class="flex gap-2 ">
                     <div class="btn bg-slate-400 text-white rounded-3xl">
-                        <img class="z-10" src="assets/checkbox.png" alt="">
-                        <p>23</p>
+                        <img  class="z-10" src="assets/checkbox.png" alt="">
+                        <p id="total-completet">23</p>
                     </div>
                     <div>
                         <img id="theme-btn" src="assets/theme-btn.png" alt="">
@@ -60,7 +60,7 @@
                         </div>
                         <div>
                             <p class="text-gray-200">Task Assigned </p>
-                            <h1 class="text-black font-bold">06</h1>
+                            <h1 id="decress-value" class="text-black font-bold">06</h1>
                         </div>
                     </div>
 
@@ -92,7 +92,7 @@
                     <div class="card bg-[#F4F7FF] shadow-xl">
                         <div class="card-body p-4">
                             <div class="badge bg-white rounded-md p-3 mb-2">ShopEase</div>
-                            <h2 class="card-title text-base">Fix Mobile Button Issue </h2>
+                            <h2 id="card-1-title" class="card-title text-base">Fix Mobile Button Issue </h2>
                             <p class="bg-white p-3 rounded-md  overflow-hidden">Debug using Chrome DevTools, check for
                                 overlapping elements.</p>
 
@@ -103,7 +103,7 @@
                                     <p class="text-gray-300 text-sm">Deadline</p>
                                     <p class="text-sm">21 March 2025</p>
                                 </div>
-                                <button class="btn btn-primary">Completed</button>
+                                <button id="btn-1" class="btn btn-primary">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -228,8 +228,7 @@
                 </div>
 
                 <!-------------------------History Box -------------------->
-                <div id="history-box" class="px-2 mt-4">
-                    <p class="p-2 bg-gray-400 text-white rounded-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, repellat?</p>
+                <div id="history-box" class="px-2 mt-4 flex gap-2 flex-col">
                 </div>
 
 

@@ -38,7 +38,7 @@ function time() {
     
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let ampm = hours >= 12 ? 'pm' : 'am';
+    let ampm = hours >= 12 ? 'PM' : 'AM';
 
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
@@ -47,21 +47,23 @@ function time() {
 
     return strTime;
   }
+// function getInnertextById(id){
+//     const value=document.getElementById()
+// }
 
+function incressCounter(id){
+    const totalCount = document.getElementById(id).innerText;
+    let sum = 0;
+    const convrtetToal = parseInt(totalCount);
+    sum = convrtetToal + 1;
+    return sum;
 
+}
+function decressCounter(id){
+    const totalCount = document.getElementById(id).innerText;
+    let sum = 0;
+    const convrtetToal = parseInt(totalCount);
+    sum = convrtetToal - 1;
+    return sum;
 
-
-
-
-
-
-
-
-
-  
-  console.log(time());
-  console.log(myDate());
-
-  console.log(toDay());
-  
-  
+}
