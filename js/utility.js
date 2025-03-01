@@ -1,10 +1,14 @@
 // Random colourCode Generate
 
 function getColor(){
-    // Hex Code
-    const randomNumber = Math.floor(Math.random() * 16777215);
-    const randomCode = "#" + randomNumber.toString(16);
-    document.body.style.backgroundColor = randomCode;
+    // rgba Code
+   
+    const num1=Math.floor(Math.random()*256);
+    const num2=Math.floor(Math.random()*256);
+    const num3=Math.floor(Math.random()*256);
+    const alpa=Math.random().toFixed(2);
+    const rgbaColour=`rgba(${num1},${num2},${num3},${alpa})`;
+    document.body.style.backgroundColor = rgbaColour;
 
 }
 
